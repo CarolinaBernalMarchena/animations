@@ -1,0 +1,127 @@
+:root {
+    --color-fondo: hsl(0, 0%, 96%);
+}
+
+.pelota {
+    width: 100px;
+    height: 100px;
+    background-color: #4771a3;
+    border-radius: 50%;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6a9d); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.centrado{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+  
+.marco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    background-color: var(--color-fondo);
+    border-style: ridge;
+    border-color: #d55d63;
+}
+
+.pelota--animacion {
+    animation: rebote 3s linear infinite, 
+    color 3s step-end infinite, 
+    gravedad 3s linear infinite;
+}
+
+@keyframes rebote {
+    0% {
+    }
+    25% {
+        margin-left: 400px;
+    }
+    75% {
+        margin-left: -400px;
+    }
+    100% { }
+}
+  
+@keyframes gravedad {
+    12.5% {
+        margin-top: -400px;
+    }
+
+    37.5% {
+        margin-top: 400px; 
+    }
+
+    62.5% {
+        margin-top: -400px; 
+    }
+
+    87.5% {
+        margin-top: 400px; 
+    }
+}
+
+@keyframes color {
+    12.5% {
+        background-color: #fdefb0;
+    }
+        
+    25% {
+    background-color: #d6a692;
+    }
+    37.5% {
+        background-color: #e7a8b1;
+    }
+    62.5% {
+        background-color: #b998b3;
+    }
+    75% {
+        background-color: #77779d;
+
+    }
+    87.5% {
+        background-color: #4771a3;
+    }
+}
+
+.botones {
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: #80b3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.boton:active {
+    background-color: #003f7f;
+}
