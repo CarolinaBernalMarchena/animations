@@ -11,7 +11,7 @@ https://youtu.be/mQ5zBxnO1SI
 
 ## Some screenshots from the project:
 
-![Captura de pantalla 2024-12-27 111318](https://github.com/user-attachments/assets/9b1c6bc3-4ed0-4a68-9d93-93af5ea13ade) 
+![Captura de pantalla 2024-12-27 111318](https://github.com/user-attachments/assets/9b1c6bc3-4ed0-4a68-9d93-93af5ea13ade) <br>
 *A ball that bounces and every time it hits a wall, it changes color*
 
 ![Captura de pantalla 2024-12-27 111338](https://github.com/user-attachments/assets/88f21661-d5f0-4c83-a508-180d032fc453) 
